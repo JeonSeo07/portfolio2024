@@ -1,6 +1,5 @@
+//main_common.js
 
-
-//common.js
 const contents = document.querySelectorAll('#container > div');
 const sections = document.querySelectorAll('#container > div > section');
 const lis = document.querySelectorAll('aside > .quick > li:not(:last-of-type)');
@@ -196,35 +195,82 @@ for(var i=0; i<headerBtn.length; i++){
     let className = e.currentTarget.getAttribute("class");
     console.log(className);
 
+    function contentClass(location,Name){
+
+      window.scroll({
+        top: location,
+        left: 0,
+        behavior: 'smooth'
+      });
+
+      if(location >= Name*devHeight && location < (Name+1)*devHeight){
+        sections.forEach(item=>{
+                item.classList.remove('on');
+              });
+        
+        sections[Name].classList.add('on');
+
+        if(sections[0].classList.contains('on')){
+          headerTop.classList.remove('on');
+          quickMenuAll.classList.remove('close');
+          btnDown.classList.remove('ab');
+        }else if(sections[sectionsLast].classList.contains('on')){
+          headerTop.classList.add('on');
+          quickMenuAll.classList.add('close');
+          btnDown.classList.add('ab');
+        }else{
+          headerTop.classList.add('on');
+          quickMenuAll.classList.remove('close');
+          btnDown.classList.remove('ab');
+        }
+      }
+    }
 
     switch(className){
       case "content2Btn":
-        location.href='index.html#content2';
+        contentClass(1*devHeight,1);
+        lisAni(lis, 1);
+        lisLastNum(1);
       break;
 
       case "content3Btn":
-        location.href='index.html#content3';
+        contentClass(2*devHeight,2);
+        lisAni(lis, 2);
+        lisLastNum(2);
       break;
 
       case "content6Btn":
-        location.href='index.html#content6';
+        contentClass(5*devHeight,5);
+        lisAni(lis, 5);
+        lisLastNum(5);
       break;
 
       case "content7Btn":
-        location.href='index.html#content7';
+        contentClass(6*devHeight,6);
+        lisAni(lis, 6);
+        lisLastNum(6);
       break;
 
       case "content8Btn":
-        location.href='index.html#content8';
+        contentClass(7*devHeight,7);
+        lisAni(lis, 7);
+        lisLastNum(7);
       break;
 
       case "content9Btn":
-        location.href='index.html#content9';
+        contentClass(8*devHeight,8);
+        lisAni(lis, 8);
+        lisLastNum(8);
       break;
+    }
+
+    function lisLastNum(num){
+      lisLast.innerHTML = `<p><span>0${num+1} /</span><span>0${sections.length}</span></p>`;
     }
 
   });
 }
+
 
 // footer 
 const siteMapBtn = document.querySelector('#footer > .footer_inner > ul > li');

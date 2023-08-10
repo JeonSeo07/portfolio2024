@@ -1,61 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
 
-  sections.forEach(item=>{
-    item.classList.remove('on');
-  });
-
-  lis.forEach(item=>{
-    item.classList.remove('on');
-  });
-
-
-  var winY = window.scrollY;
-  const sec1 = document.querySelector('#content2').getBoundingClientRect().y;
-  const sec2 = document.querySelector('#content3').getBoundingClientRect().y;
-  const sec5 = document.querySelector('#content6').getBoundingClientRect().y;
-  const sec6 = document.querySelector('#content7').getBoundingClientRect().y;
-  const sec7 = document.querySelector('#content8').getBoundingClientRect().y;
-  const sec8 = document.querySelector('#content9').getBoundingClientRect().y;
-
-  console.log(sec6);
-
-  // let sec6Y = sec6
-
-
-  if(winY >= sec1 && winY <= sec2){
-    sections[1].classList.add('on');
-    lisLastNum(1)
-    lisAni(lis, 1);
-  }else if(winY >= sec2){
-    sections[2].classList.add('on');
-    lisLastNum(2)
-    lisAni(lis, 2);
-  }else if(winY >= sec5){
-    sections[5].classList.add('on');
-    lisLastNum(5)
-    lisAni(lis, 5);
-  }else if(winY <= sec6){
-    sections[6].classList.add('on');
-    lisLastNum(6)
-    lisAni(lis, 6);
-  }else if(winY <= sec7){
-    sections[7].classList.add('on');
-    lisLastNum(7)
-    lisAni(lis, 7);
-  }else if(winY <= sec8){
-    sections[8].classList.add('on');
-    lisLastNum(8)
-    lisAni(lis, 8);
-  }
-
-  headerTop.classList.add('on');
-  quickMenuAll.classList.remove('close');
-  btnDown.classList.remove('ab');
-
-  function lisLastNum(num){
-    lisLast.innerHTML = `<p><span>0${num+1} /</span><span>0${sections.length}</span></p>`;
-  }
-});
 
 //common.js
 const contents = document.querySelectorAll('#container > div');
@@ -253,82 +196,35 @@ for(var i=0; i<headerBtn.length; i++){
     let className = e.currentTarget.getAttribute("class");
     console.log(className);
 
-    function contentClass(location,Name){
-
-      window.scroll({
-        top: location,
-        left: 0,
-        behavior: 'smooth'
-      });
-
-      if(location >= Name*devHeight && location < (Name+1)*devHeight){
-        sections.forEach(item=>{
-                item.classList.remove('on');
-              });
-        
-        sections[Name].classList.add('on');
-
-        if(sections[0].classList.contains('on')){
-          headerTop.classList.remove('on');
-          quickMenuAll.classList.remove('close');
-          btnDown.classList.remove('ab');
-        }else if(sections[sectionsLast].classList.contains('on')){
-          headerTop.classList.add('on');
-          quickMenuAll.classList.add('close');
-          btnDown.classList.add('ab');
-        }else{
-          headerTop.classList.add('on');
-          quickMenuAll.classList.remove('close');
-          btnDown.classList.remove('ab');
-        }
-      }
-    }
 
     switch(className){
       case "content2Btn":
-        contentClass(1*devHeight,1);
-        lisAni(lis, 1);
-        lisLastNum(1);
+        location.href='index.html#content2';
       break;
 
       case "content3Btn":
-        contentClass(2*devHeight,2);
-        lisAni(lis, 2);
-        lisLastNum(2);
+        location.href='index.html#content3';
       break;
 
       case "content6Btn":
-        contentClass(5*devHeight,5);
-        lisAni(lis, 5);
-        lisLastNum(5);
+        location.href='index.html#content6';
       break;
 
       case "content7Btn":
-        contentClass(6*devHeight,6);
-        lisAni(lis, 6);
-        lisLastNum(6);
+        location.href='index.html#content7';
       break;
 
       case "content8Btn":
-        contentClass(7*devHeight,7);
-        lisAni(lis, 7);
-        lisLastNum(7);
+        location.href='index.html#content8';
       break;
 
       case "content9Btn":
-        contentClass(8*devHeight,8);
-        lisAni(lis, 8);
-        lisLastNum(8);
+        location.href='index.html#content9';
       break;
-    }
-
-    function lisLastNum(num){
-      lisLast.innerHTML = `<p><span>0${num+1} /</span><span>0${sections.length}</span></p>`;
     }
 
   });
 }
-
 
 // footer 
 const siteMapBtn = document.querySelector('#footer > .footer_inner > ul > li');
@@ -349,3 +245,4 @@ siteMapBtn.addEventListener('click',(e)=>{
     btnDown.style.opacity = '1';
    }
 });
+

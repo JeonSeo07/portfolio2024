@@ -19,11 +19,40 @@
 
   <!-- js -->
   <script defer src="./js/sub_header.js"></script>
+  <script defer src="./js/sub2_common.js"></script>
 </head>
 <body>
   <!-- 본문 바로가기 -->
   <div id="skipNavi"><a href=".content2">본문 바로가기</a></div>
   <!-- //본문 바로가기 -->
+
+  <!-- moblie -->
+  <div class="mobBtn">
+    <a href="#" title="메뉴 전체보기 열기"> 메뉴 전체보기</a>
+  </div>
+
+  <!-- mob_header -->
+  <div class="mob_header">
+    <!-- mob_header_inner -->
+    <div class="mob_header_inner">
+      <!-- mob 주메뉴 -->
+      <h2 class="blind">주메뉴</h2>
+      <nav>
+        <ul class="menuBtn">
+          <li class="content2Btn"><a href="#content2">ABOUT</a></li>
+          <li class="content3Btn"><a href="#content3">WEBSITE</a></li>
+          <li class="content6Btn"><a href="#content6">WEB DESIGN</a></li>
+          <li class="content7Btn"><a href="#content7">APPLICATION</a></li>
+          <li class="content9Btn"><a href="#content8">ILLUSTRATION</a></li>
+          <li class="content10Btn"><a href="#content9">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- //mob 주메뉴 -->
+    </div>
+    <!-- //mob_header_inner -->
+  </div>
+
+  <!-- //moblie -->
 
    <!-- header -->
    <header id="header">
@@ -224,13 +253,13 @@
               <a href="index.html"><img src="./images/logo_white.png" alt="전서연 포트폴리오 로고"></a>
             </div>
             <!-- //logo -->
-            <ul>
+            <ul class="sitemap">
               <li>
                 <a href="#" title="사이트 맵 열기">Sitemap</a>
                 <ul>
                   <li><a href="#">HOME</a></li>
                   <li><a href="#">ABOUT</a></li>
-                  <li><a href="#">WEBSITE</a>
+                  <li>WEBSITE
                     <ul>
                       <li><a href="#">OTTOGI</a></li>
                       <li><a href="#">LOVE HOTFIT</a></li>
@@ -238,7 +267,12 @@
                     </ul>
                   </li>
                   <li><a href="#">WEB DESIGN</a></li>
-                  <li><a href="#">APPLICATION</a></li>
+                  <li>APPLICATION
+                    <ul>
+                      <li><a href="#">GROENING</a></li>
+                      <li><a href="#">KIDS-PLE</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">ILLUSTRATION</a></li>
                   <li><a href="#">CONTACT</a></li>
                 </ul>

@@ -20,7 +20,6 @@
   <!-- js -->
   <script defer src="./js/main_common.js"></script>
   <script defer src="js/main.js"></script>
-  <script defer src="./js/main_link.js"></script>
   
 </head>
 <body>
@@ -28,7 +27,36 @@
   <div id="skipNavi"><a href="#content2">본문 바로가기</a></div>
   <!-- //본문 바로가기 -->
 
+  <!-- <div class="fixed_bg"></div> -->
   <div class="bg"></div>
+
+  <!-- moblie -->
+  <div class="mobBtn">
+    <a href="#" title="메뉴 전체보기 열기"> 메뉴 전체보기</a>
+  </div>
+
+  <!-- mob_header -->
+  <div class="mob_header">
+    <!-- mob_header_inner -->
+    <div class="mob_header_inner">
+      <!-- mob 주메뉴 -->
+      <h2 class="blind">주메뉴</h2>
+      <nav>
+        <ul class="menuBtn">
+          <li class="content2Btn"><a href="#content2">ABOUT</a></li>
+          <li class="content3Btn"><a href="#content3">WEBSITE</a></li>
+          <li class="content6Btn"><a href="#content6">WEB DESIGN</a></li>
+          <li class="content7Btn"><a href="#content7">APPLICATION</a></li>
+          <li class="content9Btn"><a href="#content8">ILLUSTRATION</a></li>
+          <li class="content10Btn"><a href="#content9">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- //mob 주메뉴 -->
+    </div>
+    <!-- //mob_header_inner -->
+  </div>
+
+  <!-- //moblie -->
 
   <!-- header -->
   <header id="header">
@@ -41,7 +69,7 @@
         <!-- //logo -->
         <!-- 탑메뉴 -->
         <p><span>WEB DESIGN</span><span>WEB PUBLISHER</span></p>
-        <p><span><a href="#">인스타그램 바로가기</a></span>PORTFOLIO</p>
+        <p><span><a href="https://www.instagram.com/gallery_tory/" target="_blank" title="새 창 바로가기">인스타그램 바로가기</a></span>PORTFOLIO</p>
         <!-- //탑메뉴 -->
       </div>
       <!-- //header_inner -->
@@ -59,8 +87,8 @@
             <li class="content3Btn"><a href="#content3">WEBSITE</a></li>
             <li class="content6Btn"><a href="#content6">WEB DESIGN</a></li>
             <li class="content7Btn"><a href="#content7">APPLICATION</a></li>
-            <li class="content8Btn"><a href="#content8">ILLUSTRATION</a></li>
-            <li class="content9Btn"><a href="#content9">CONTACT</a></li>
+            <li class="content9Btn"><a href="#content8">ILLUSTRATION</a></li>
+            <li class="content10Btn"><a href="#content9">CONTACT</a></li>
           </ul>
         </nav>
         <!-- //주메뉴 -->
@@ -105,7 +133,7 @@
             <ul>
               <li>
                 <p>JEON SEO YEON</p>
-                <h4>안녕하세요<br />디자이너 "전서연"입니다.</h4>
+                <h4>안녕하세요 UX/UI 디자이너<br /> "전서연"입니다.</h4>
                 <dl>
                   <dt class="blind">생년월일, 모교</dt>
                   <dd>2001.12.18</dd>
@@ -128,12 +156,30 @@
               </li>
               <li><h5>SKILLS</h5>
                 <ul>
-                  <li>Ps</li>
-                  <li>Ai</li>
-                  <li>VSC</li>
-                  <li>3D</li>
-                  <li>Ae</li>
-                  <li>Figma</li>
+                  <li>
+                    <img src="./images/photoshop_icon.png" alt="포토샵 아이콘" />
+                    <p>Photoshop</p>
+                  </li>
+                  <li>
+                    <img src="./images/illustration_icon.png" alt="일러스트레이터 아이콘" />
+                    <p>Illustrator</p>
+                  </li>
+                  <li>
+                    <img src="./images/vscode_icon.png" alt="vs code 아이콘" />
+                    <p>Vs Code</p>
+                  </li>
+                  <li>
+                    <img src="./images/3Dmax_icon.png" alt="3D max 아이콘" />
+                    <p>3D Max</p>
+                  </li>
+                  <li>
+                    <img src="./images/aftereffect_icon.png" alt="에프터이펙트 아이콘" />
+                    <p>After Effect</p>
+                  </li>
+                  <li>
+                    <img src="./images/figma_icon.png" alt="피그마 아이콘" />
+                    <p>Figma</p>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -201,7 +247,7 @@
             <li>JAVASCRIPT</li>
           </ul>
           <ul>
-            <li>참여도 &#45; 95&#37;</li>
+            <li>메인페이지 디자인 참여도 &#45; 75&#37; | 코딩 참여도 &#45; 100&#37;</li>
             <li>PC, 태블릿, 모바일 디바이스의 해상도에 맞는 반응형 웹사이트</li>
             <li>웹 접근성, 웹 표준을 준수한 웹 사이트 구현</li>
             <li>JavaScript를 이용해 Nav Bar, Auto Banner 등 다양한 인터렉션 구현</li>
@@ -326,7 +372,7 @@
           <p>단순히 정보만 나열했던 기존 사이트의 메인페이지를<br/>몽환적이고 깔끔하게 새롭게 redesign</p>
           <ul class="site_btn">
             <li><a href="https://www.figma.com/file/rbhCyWXeACPPiygvloDJMi/%EB%A9%9C%EB%A1%A0-%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8?type=design&node-id=0%3A1&mode=design&t=cQSoLZ4BzlbT29Rp-1" target="_blank" title="새 창 바로가기">피그마 바로가기</a></li>
-            <li><a href="sub1.html">상세보기</a></li>
+            <li><a href="sub1.html" target="_blank">상세보기</a></li>
           </ul>
           <ul>
             <li>FIGMA</li>
@@ -355,7 +401,7 @@
           <p>반려식물을 더 스마트하게 관리하고<br/>함께 성장하는 식물 플래너</p>
           <ul class="site_btn">
             <li><a href="https://www.figma.com/file/pZs43X79lfWwRjMNz7M0Pf/%EA%B7%B8%EB%A1%9C%EB%8B%9D-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?type=design&node-id=0%3A1&mode=design&t=bGaIrvnHOSgpxvDb-1" target="_blank" title="새 창 바로가기">피그마 바로가기</a></li>
-            <li><a href="sub2.html">상세보기</a></li>
+            <li><a href="sub2.html" target="_blank">상세보기</a></li>
           </ul>
           <ul>
             <li>FIGMA</li>
@@ -372,8 +418,38 @@
     </div>
     <!-- //content7 -->
 
-    <!-- content8 -->
-    <div id="content8" class="content8Btn">
+     <!-- content8 -->
+     <div id="content8">
+      <section class="produce">
+        <div class="intro">
+          <h3>KIDS-PLE</h3>
+          <h3>APPLICATION</h3>
+        </div>
+        <div>
+          <h3>APPLICATION</h3>
+          <h4>KIDS-PLE</h4>
+          <p>즐겁고 스마트하게 자녀 교육을 돕는<br/>맞춤형 놀이 교육 어플리케이션</p>
+          <ul class="site_btn">
+            <li><a href="https://www.figma.com/file/cVXk1IrC0GDtRwiOkEEupw/KIDS-PLE?type=design&node-id=0%3A1&mode=design&t=a7NmC6fl98TknXxv-1" target="_blank" title="새 창 바로가기">피그마 바로가기</a></li>
+            <li><a href="sub3.html" target="_blank">상세보기</a></li>
+          </ul>
+          <ul>
+            <li>PHOTOSHOP</li>
+            <li>ILLUSTRATOR</li>
+          </ul>
+          <ul>
+            <li>참여도 &#45; 100&#37;</li>
+            <li>편안하고 차분한 느낌의 다크모드를 기본형태로 발랄함이 돋보이는 옐로우</li>
+            <li>3세~7세 사이의 자녀의 나이, 관심도에 따라 변화하는 알고리즘</li>
+            <li>게임 플레이 시간, 완료도, 특성 등을 통해 보여주는 두뇌 발달 보고서</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- //content8 -->
+
+    <!-- content9 -->
+    <div id="content9" class="content9Btn">
       <section>
         <div>
           <div>
@@ -446,6 +522,27 @@
                   <p>2023. 03. 30 ~ 2023. 04. 03</p>
                 </a>
               </li>
+              <li>
+                <a href="#" class="illust10">
+                  <p>Click!<br/>More Detail</p>
+                  <p>어린이날<br/>일러스트</p>
+                  <p>2023. 06. 04</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="illust11">
+                  <p>Click!<br/>More Detail</p>
+                  <p>판타지 캐릭터<br/>일러스트</p>
+                  <p>2021. 12. 27</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="illust12">
+                  <p>Click!<br/>More Detail</p>
+                  <p>책 읽는 여성<br/>일러스트</p>
+                  <p>2021. 10. 22</p>
+                </a>
+              </li>
             </ul>
           </div>
           
@@ -459,20 +556,25 @@
             <div class="illust7"><img src="./images/illustration_07.jpg" alt="야채캐릭터 일러스트"></div>
             <div class="illust8"><img src="./images/illustration_08.jpg" alt="스포츠 일러스트"></div>
             <div class="illust9"><img src="./images/illustration_09.jpg" alt="CU 프렌즈의 일상 공모전 일러스트"></div>
+            <div class="illust10"><img src="./images/illustration_10.jpg" alt="어린이날 일러스트"></div>
+            <div class="illust11"><img src="./images/illustration_11.jpg" alt="판타지 캐릭터 일러스트"></div>
+            <div class="illust12"><img src="./images/illustration_12.jpg" alt="책읽는 여성 일러스트"></div>
+
+            <a href="#" title="창 닫기" class="resetBtn2"><img src="./images/reset.png" alt="창닫기" /></a>
           </div>
 
           <div class="illust_arrow">
             <a href="#" class="btn_prev on">이전 슬라이드</a>
             <a href="#" class="btn_next">다음 슬라이드</a>
           </div>
-          <a href="#" title="창 닫기" class="resetBtn2"><img src="./images/reset.png" alt="창닫기" /></a>
+          
         </div>
       </section>
     </div>
-    <!-- //content8 -->
+    <!-- //content9 -->
 
-    <!-- content9 -->
-    <div id="content9" class="content9Btn">
+    <!-- content10 -->
+    <div id="content10" class="content10Btn">
       <section>
         <h3>CONTACT</h3>
         <p>Send Me A Message !</p>
@@ -509,7 +611,6 @@
           </form>
         </div>
         
-
         <footer id="footer">
           <div class="footer_inner">
             <p class="copyright">Copyright ©2023 All rights reserved</p>
@@ -524,7 +625,7 @@
                 <ul>
                   <li><a href="#">HOME</a></li>
                   <li><a href="#">ABOUT</a></li>
-                  <li><a href="#">WEBSITE</a>
+                  <li>WEBSITE
                     <ul>
                       <li><a href="#">OTTOGI</a></li>
                       <li><a href="#">LOVE HOTFIT</a></li>
@@ -532,7 +633,12 @@
                     </ul>
                   </li>
                   <li><a href="#">WEB DESIGN</a></li>
-                  <li><a href="#">APPLICATION</a></li>
+                  <li>APPLICATION
+                    <ul>
+                      <li><a href="#">GROENING</a></li>
+                      <li><a href="#">KIDS-PLE</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">ILLUSTRATION</a></li>
                   <li><a href="#">CONTACT</a></li>
                 </ul>
@@ -542,7 +648,7 @@
         </footer>
       </section>
     </div>
-    <!-- //content9 -->
+    <!-- //content10 -->
   </div>
   <!-- //container -->
   <hr />
@@ -558,7 +664,8 @@
       <li><a href="#">일곱번째 페이지로 이동하기</a></li>
       <li><a href="#">여덟번째 페이지로 이동하기</a></li>
       <li><a href="#">아홉번째 페이지로 이동하기</a></li>
-      <li><p><span class="pageCount">01 / </span><span class="pageAll">09</span></p></li>
+      <li><a href="#">열번째 페이지로 이동하기</a></li>
+      <li><p><span class="pageCount">01 / </span><span class="pageAll">10</span></p></li>
     </ul>
   </aside>
   <!-- //quickMenu -->

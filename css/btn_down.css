@@ -1,0 +1,39 @@
+/* Mobile 크기 0~768 */
+@media screen and (max-width:768px){
+
+   /* btn_down */
+   .btn_down{position: fixed; right: 50px; bottom: 50px; width: 202px; height: 203px; z-index: 40; transition: bottom 0.5s linear 0s;}
+   .btn_down.ab{bottom: 130px;}
+   .btn_down::after{content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(../images/scrolldown_white.png)no-repeat 0 0; animation: btn_downAni 10s linear 0s infinite; z-index: -1;}
+   @keyframes btn_downAni{
+   0%{transform: rotate(0deg);}
+   100%{transform: rotate(360deg);}
+   }
+   
+   .btn_down.on::after{background: url(../images/scrolldown_black.png)no-repeat 0 0;}
+   
+   .btn_down > a{display: block; position: absolute; left: 50%; top: 50%; width: 65px; height: 65px; background: url(../images/scrolldown_arrow_white.png)no-repeat 50% 0; transform: translate(-50%, -50%);}
+   
+   .btn_down.on > a{background: url(../images/scrolldown_arrow_black.png)no-repeat 50% 0;}
+   
+}
+
+/* Pc 크기 769~최대 */
+@media screen and (min-width:769px){
+
+  /* btn_down */
+.btn_down{position: fixed; right: 97px; bottom: 63px; width: 202px; height: 203px; z-index: 40; transition: bottom 0.5s linear 0s;}
+.btn_down.ab{bottom: 130px;}
+.btn_down::after{content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(../images/scrolldown_white.png)no-repeat 0 0; animation: btn_downAni 10s linear 0s infinite; z-index: -1;}
+@keyframes btn_downAni{
+0%{transform: rotate(0deg);}
+100%{transform: rotate(360deg);}
+}
+
+.btn_down.on::after{background: url(../images/scrolldown_black.png)no-repeat 0 0;}
+
+.btn_down > a{display: block; position: absolute; left: 50%; top: 50%; width: 65px; height: 65px; background: url(../images/scrolldown_arrow_white.png)no-repeat 50% 0; transform: translate(-50%, -50%);}
+
+.btn_down.on > a{background: url(../images/scrolldown_arrow_black.png)no-repeat 50% 0;}
+
+}

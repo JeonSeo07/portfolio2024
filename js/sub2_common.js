@@ -1,3 +1,4 @@
+window.addEventListener('load',()=>{
 // sub2 mob_content3
 const con3Btn = document.querySelectorAll('.content3 > section > div > ul > li > h4');
 
@@ -43,3 +44,4 @@ const icon = document.querySelector('.content3 > section > div > ul > li:nth-chi
 const color = document.querySelectorAll('.content3 > section > div > ul > li:nth-child(3) > ul > li');
 const typography = document.querySelector('.content3 > section > div > ul > li:last-child > dl');
 
+});

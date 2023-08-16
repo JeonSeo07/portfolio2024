@@ -1,0 +1,36 @@
+/* Mobile 크기 0~768 */
+@media screen and (max-width:768px){
+
+  /* moblie */
+  .mobBtn{position: fixed; left: 7%; top: 15px; z-index: 50;}
+  .mobBtn > a{display: block; width: 30px; height: 30px; background: url(../images/mob_menuBtn.png)no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+  .mobBtn.white > a{background-image: url(../images/mob_menuBtn_black.png);}
+  .mobBtn.on > a{background-image: url(../images/mob_menuBtn_close.png);}
+  .mobBtn.on.white > a{background-image: url(../images/mob_menuBtn_close_black.png);}
+
+
+  /* .mob_header */
+  .mob_header{position: fixed; left: 0; top: 0; right: 0; bottom: 0; width: 65%; height: 94%; background: linear-gradient(180deg, rgba(140, 140, 140, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%); border-radius: 0 20px 20px 0; border: 1px solid #fff; border-left: none; border-top: none; backdrop-filter: blur(4px); margin-top: 61px; z-index: 55; transform: translateX(-100%); transition: transform 0.5s ease 0s;}
+
+  .mob_header.on{transform: translateX(0);}
+
+  .mob_header_inner{height: 100%; padding-left: 10%; padding-top: 173px; box-sizing: border-box;}
+
+  .mob_header_inner > nav > ul{overflow: hidden;}
+  .mob_header_inner > nav > ul > li{position: relative; font-size: 45px; font-weight: 700; line-height: 1; margin-bottom: 48px; padding-left: 57px; transform: translateX(-57px); transition: transform 0.5s linear 0.2s;}
+  .mob_header_inner > nav > ul > li:hover{transform: translateX(0);}
+
+  .mob_header_inner > nav > ul > li::after{content: ""; position: absolute; left: 0; top: 0; width: 45px;  height: 100%; background: url(../images/mob_menu_logo.png)no-repeat 0 0; opacity: 0; transition: opacity 0.5s ease 0.5s;}
+  .mob_header_inner > nav > ul > li:hover::after{opacity: 1;}
+
+  .mob_header_inner > nav > ul > li > a{color: rgba(255, 255, 255, 0.20); -webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: #fff; transition: color 0.5s linear 0.2s;}
+  .mob_header_inner > nav > ul > li:hover > a{color: #fff;}
+  
+}
+
+/* Pc 크기 769~최대 */
+@media screen and (min-width:769px){
+  /* moblie */
+  .mobBtn{display: none;}
+  .mob_header{display: none;}
+}

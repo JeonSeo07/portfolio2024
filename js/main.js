@@ -1,3 +1,4 @@
+window.addEventListener('load',()=>{
 //main.js
 // main_page 배경 마우스따라 움직임
 
@@ -408,17 +409,6 @@ for(var i=0; i < illustBtn.length; i++){
     mobBg.classList.add("on");
     originalWrap.classList.add("on");
     resetBtn2.classList.add("on");
-
-    // originalWrap.parentElement.addEventListener('wheel', (e) => {
-    //   e.stopPropagation();
-    // });
-
-    // for(let j=0; j<originalAll.length; j++){
-    //   originalAll[j].addEventListener('wheel',(e)=>{
-    //     e.currentTarget.stopPropagation();
-    //   });
-    // }
-
     
     originalWrap.parentElement.addEventListener('wheel', parentScrollHandler);
     
@@ -432,8 +422,6 @@ for(var i=0; i < illustBtn.length; i++){
     }
 
     
-    
-
     originalAll.forEach((item)=>{
       item.style.display = "none";
     });
@@ -515,4 +503,7 @@ resetBtn2.addEventListener('click',(e)=>{
   for (let j = 0; j < originalAll.length; j++) {
       originalAll[j].removeEventListener('wheel', childScrollHandlers[j]);
   }
+});
+
+
 });

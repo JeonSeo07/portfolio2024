@@ -1,3 +1,4 @@
+window.addEventListener('load',()=>{
 //main_common.js
 
 const contents = document.querySelectorAll('#container > div');
@@ -336,3 +337,4 @@ mobBtn.addEventListener('click',(e)=>{
 
 
 
+});

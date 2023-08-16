@@ -1,0 +1,43 @@
+/* Mobile 크기 0~768 */
+@media screen and (max-width:768px){
+
+  /* quickMenu */
+  .quickMenu{display: block; position: fixed; left: 50px; bottom: 53px; width: 100%; height: 22px; z-index: 30;}
+  .quickMenu.close{display: none;}
+  .quickMenu > ul{width: 87%px; margin: 0 auto; display: flex; justify-content: flex-start;}
+  .quickMenu > ul > li:not(:last-of-type){width: 10px; height: 10px; border-radius: 50%; border: 1px solid #fff; background-color: transparent; text-indent: -9999px; overflow: hidden; margin-top: 2px; margin-right: 21px; cursor: pointer;}
+  .quickMenu.white > ul > li:not(:last-of-type){border: 1px solid #000;}
+  
+  .quickMenu > ul > li:not(:last-of-type).on{border: 1px solid transparent; background-color: #fff;}
+  .quickMenu > ul > li:not(:last-of-type).white{border: 1px solid transparent; background-color: #000;}
+  
+  .quickMenu > ul > li:last-of-type > p > span{font-size: 16px; line-height: 1;}
+  .quickMenu > ul > li:last-of-type > p > span:first-child{font-weight: 700; color: #fff;}
+  .quickMenu.white > ul > li:last-of-type > p > span:first-child{color: #000;}
+  .quickMenu > ul > li:last-of-type > p:last-child{ font-weight: 500; color: rgba(255, 255, 255, 0.70);}
+  .quickMenu.white > ul > li:last-of-type > p:last-child{color: rgba(0, 0, 0, 0.70);}
+  
+}
+
+/* Pc 크기 769~최대 */
+@media screen and (min-width:769px){
+
+  
+/* quickMenu */
+.quickMenu{display: block; position: fixed; left: 0; bottom: 53px; width: 100%; height: 22px; z-index: 30;}
+.quickMenu.close{display: none;}
+.quickMenu > ul{width: 1720px; margin: 0 auto; display: flex; justify-content: flex-start;}
+.quickMenu > ul > li:not(:last-of-type){width: 10px; height: 10px; border-radius: 50%; border: 1px solid #fff; background-color: transparent; text-indent: -9999px; overflow: hidden; margin-top: 2px; margin-right: 21px; cursor: pointer;}
+.quickMenu.white > ul > li:not(:last-of-type){border: 1px solid #000;}
+
+.quickMenu > ul > li:not(:last-of-type).on{border: 1px solid transparent; background-color: #fff;}
+.quickMenu > ul > li:not(:last-of-type).white{border: 1px solid transparent; background-color: #000;}
+
+.quickMenu > ul > li:last-of-type > p > span{font-size: 16px; line-height: 1;}
+.quickMenu > ul > li:last-of-type > p > span:first-child{font-weight: 700; color: #fff;}
+.quickMenu.white > ul > li:last-of-type > p > span:first-child{color: #000;}
+.quickMenu > ul > li:last-of-type > p:last-child{ font-weight: 500; color: rgba(255, 255, 255, 0.70);}
+.quickMenu.white > ul > li:last-of-type > p:last-child{color: rgba(0, 0, 0, 0.70);}
+
+
+}

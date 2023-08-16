@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
 
   <!-- css -->
+  <link rel="stylesheet" href="./css/import.css" type="text/css">
   <link rel="stylesheet" href="./css/sub3.css" type="text/css">
 
   <!-- js -->
@@ -34,65 +35,14 @@
 
   <!-- mob_header -->
   <div class="mob_header">
-    <!-- mob_header_inner -->
-    <div class="mob_header_inner">
-      <!-- mob 주메뉴 -->
-      <h2 class="blind">주메뉴</h2>
-      <nav>
-        <ul class="menuBtn">
-          <li class="content2Btn"><a href="#content2">ABOUT</a></li>
-          <li class="content3Btn"><a href="#content3">WEBSITE</a></li>
-          <li class="content6Btn"><a href="#content6">WEB DESIGN</a></li>
-          <li class="content7Btn"><a href="#content7">APPLICATION</a></li>
-          <li class="content9Btn"><a href="#content8">ILLUSTRATION</a></li>
-          <li class="content10Btn"><a href="#content9">CONTACT</a></li>
-        </ul>
-      </nav>
-      <!-- //mob 주메뉴 -->
-    </div>
-    <!-- //mob_header_inner -->
+    
   </div>
   <!-- //moblie -->
 
 
    <!-- header -->
    <header id="header">
-    <!-- header_top -->
-    <div class="header_top">
-      <!-- header_inner -->
-      <div class="header_inner">
-        <!-- logo -->
-        <h1><a href="index.html"><img src="./images/logo_white.png" alt="전서연 포트폴리오 로고"></a></h1>
-        <!-- //logo -->
-        <!-- 탑메뉴 -->
-        <p><span>WEB DESIGN</span><span>WEB PUBLISHER</span></p>
-        <p><span><a href="#">인스타그램 바로가기</a></span>PORTFOLIO</p>
-        <!-- //탑메뉴 -->
-      </div>
-      <!-- //header_inner -->
-    </div>
-    <!-- //header_top -->
-    <!-- header_bottom -->
-    <div class="header_bottom">
-      <!-- header_inner -->
-      <div class="header_inner">
-        <!-- 주메뉴 -->
-        <h2 class="blind">주메뉴</h2>
-        <nav>
-          <ul class="menuBtn">
-            <li class="content2Btn"><a href="#content2">ABOUT</a></li>
-            <li class="content3Btn"><a href="#content3">WEBSITE</a></li>
-            <li class="content6Btn"><a href="#content6">WEB DESIGN</a></li>
-            <li class="content7Btn"><a href="#content7">APPLICATION</a></li>
-            <li class="content8Btn"><a href="#content8">ILLUSTRATION</a></li>
-            <li class="content9Btn"><a href="#content9">CONTACT</a></li>
-          </ul>
-        </nav>
-        <!-- //주메뉴 -->
-      </div>
-      <!-- //header_inner -->
-    </div>
-    <!-- //header_bottom -->
+    
   </header>
   <!-- //header -->
   <hr />
@@ -229,5 +179,21 @@
     <a href="#" title="페이지 다운 버튼"></a>
   </div>
   <!-- //btn_down -->
+
+  <script>
+    async function fetchHtmlAsText(url){
+    const response = await fetch(url);
+    return await response.text();
+    }
+
+    async function importPageId(target){
+      document.querySelector('#'+target).innerHTML = await fetchHtmlAsText(target+'.html');
+    }
+    async function importPageClass(target){
+      document.querySelector('.'+target).innerHTML = await fetchHtmlAsText(target+'.html');
+    }
+    importPageId('header');
+    importPageClass('mob_header');
+  </script>
 </body>
 </html>

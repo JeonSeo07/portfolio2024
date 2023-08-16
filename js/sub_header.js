@@ -1,4 +1,4 @@
-
+window.addEventListener('load',()=>{
 
 //common.js
 const contents = document.querySelectorAll('#container > div');
@@ -221,11 +221,11 @@ for(var i=0; i<headerBtn.length; i++){
         location.href='index.html#content7';
       break;
 
-      case "content8Btn":
+      case "content9Btn":
         location.href='index.html#content9';
       break;
 
-      case "content9Btn":
+      case "content10Btn":
         location.href='index.html#content10';
       break;
     }
@@ -281,3 +281,4 @@ mobBtn.addEventListener('click',(e)=>{
 
 
 
+});

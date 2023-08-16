@@ -647,8 +647,9 @@ div.illust_arrow > a.btn_next.on{opacity: 0;}
 
 
 #content10 > section > div > div{float: right; width: 600px; padding-top: 170px; box-sizing: border-box;}
-#content10 > section > div > div > p:first-child{font-size: 30px; font-weight: 400; text-transform: uppercase; text-decoration-line: underline;}
+#content10 > section > div > div > p:first-child{font-size: 40px; font-weight: 700; text-transform: uppercase;  -webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: #fff; color: rgba(255, 255, 255, 0.3);}
 #content10 > section > div > div > p:nth-child(2){font-size: 20px; font-weight: 400; line-height: 35px; margin: 50px 0;}
+#content10 > section > div > div > p:nth-child(2) > span{font-weight: 700;}
 #content10 > section > div > div > p:last-child{font-size: 12px; line-height: 20px; opacity: 0.5;}
 
 

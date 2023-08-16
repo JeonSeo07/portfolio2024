@@ -137,9 +137,9 @@
   .introduction > ul > li:nth-child(3) > ul > li > p{display: none; position: absolute; left: 0; bottom: 15%; text-align: center; font-size: 12px; font-weight: 700; width: 100%;}
   
   /* 교육 */
-  .education{width: 50%; margin-top: 55%;}
+  .education{width: 50%; margin-top: 50%;}
   .education > ul > li{display: flex; flex-direction: column; justify-content: center;}
-  .education > ul > li > dl{width: 300px; height: 64px; border-radius: 15px; background: rgba(255, 255, 255, 0.30); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); margin: 5px 0;  padding: 10px 15px; box-sizing: border-box; transform: translateX(-300px); opacity: 0;}
+  .education > ul > li > dl{width: 300px; height: 55px; border-radius: 15px; background: rgba(255, 255, 255, 0.30); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); margin: 5px 0;  padding: 5px 15px; box-sizing: border-box; transform: translateX(-300px); opacity: 0;}
   .education > ul > li > dl::after{content: ""; position: relative; clear: both;}
   
   .education > ul > li > dl:nth-of-type(1){transition: all 1s ease 0.5s;}
@@ -148,6 +148,7 @@
   .education > ul > li > dl:nth-of-type(4){transition: all 2.5s ease 0.5s;}
   .education > ul > li > dl:nth-of-type(5){transition: all 3s ease 0.5s;}
   .education > ul > li > dl:nth-of-type(6){transition: all 3.5s ease 0.5s;}
+  .education > ul > li > dl:nth-of-type(7){transition: all 4s ease 0.5s;}
   #content2 > section.on .education > ul > li > dl{transform: translateX(0); opacity: 1;}
   
   
@@ -462,15 +463,16 @@
 /* 교육 */
 .education{width: 29%;}
 .education > ul > li{display: flex; flex-direction: column; justify-content: center;}
-.education > ul > li > dl{width: 412px; height: 86px; border-radius: 20px; background: rgba(255, 255, 255, 0.30); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); margin: 21px 0;  padding: 19px 37px; box-sizing: border-box; transform: translateX(300px); opacity: 0;}
+.education > ul > li > dl{width: 412px; height: 86px; border-radius: 20px; background: rgba(255, 255, 255, 0.30); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); margin: 10px 0;  padding: 19px 37px; box-sizing: border-box; transform: translateX(300px); opacity: 0;}
 .education > ul > li > dl::after{content: ""; position: relative; clear: both;}
 
-.education > ul > li > dl:nth-of-type(1){transition: all 1s ease 0.5s;}
+.education > ul > li > dl:nth-of-type(1){transition: all 1s ease 0.5s; margin-top: 25px;}
 .education > ul > li > dl:nth-of-type(2){transition: all 1.5s ease 0.5s;}
 .education > ul > li > dl:nth-of-type(3){transition: all 2s ease 0.5s;}
 .education > ul > li > dl:nth-of-type(4){transition: all 2.5s ease 0.5s;}
 .education > ul > li > dl:nth-of-type(5){transition: all 3s ease 0.5s;}
 .education > ul > li > dl:nth-of-type(6){transition: all 3.5s ease 0.5s;}
+.education > ul > li > dl:nth-of-type(7){transition: all 4s ease 0.5s;}
 #content2 > section.on .education > ul > li > dl{transform: translateX(0); opacity: 1;}
 
 

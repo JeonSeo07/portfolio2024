@@ -798,13 +798,15 @@ for(var i=0; i < illustBtn.length; i++){
     mobBg.classList.add("on");
     originalWrap.classList.add("on");
     resetBtn2.classList.add("on");
-    
+
     shouldStopPropagation = true;
 
     originalWrap.parentElement.addEventListener('wheel', parentScrollHandler);
     
     
     for (let j = 0; j < originalAll.length; j++) {
+        shouldStopPropagation = true;
+
         const childScrollHandler = (e) => {
           if (shouldStopPropagation) {
             e.stopPropagation();

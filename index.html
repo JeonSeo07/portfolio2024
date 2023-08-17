@@ -68,7 +68,65 @@
           <div class="star_img2">별자리 이미지2</div>
           <div class="star_img3">별자리 이미지3</div>
           <div class="light_img">빛 이미지</div>
-          <div class="orbit_img">행성궤도</div>
+          
+                    
+          <svg version="1.1" class="orbit_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 1920 1024" style="enable-background:new 0 0 1920 1024;" xml:space="preserve">
+          <path id="routePath1" d="M704.68,368.21c0,0,137.58-45.62,295.84-48.48c158.26-2.85,275.17,12.12,256.63,64.87S995.53,484.41,833,483.69
+          c-162.53-0.71-206.02-32.08-208.16-56.32C622.7,403.14,683.78,374.51,704.68,368.21z"/>
+          <path id="routePath2" d="M1274.27,401.55c149.08-84.84,116.2-145.98,84.83-158.81c-31.37-12.83-133.31-52.04-410.61,17.82
+          S555.69,435.93,555.69,435.93s-63.45,46.34-46.34,89.11c17.11,42.77,143.29,60.59,327.21,28.51S1204.41,441.31,1274.27,401.55z"/>
+
+          <path class="orbit_star" d="M658.29,569.7L658.29,569.7c-18.5-0.96-34.84,24.19-36.49,56.16h0c1.65-31.97-12.01-58.67-30.51-59.62v0
+            c18.5,0.96,34.84-24.19,36.49-56.16h0C626.13,542.05,639.79,568.74,658.29,569.7z"/>
+          <path class="orbit_star" d="M1162.25,323.73L1162.25,323.73c-10.61-0.55-19.97,13.86-20.92,32.19h0c0.95-18.33-6.88-33.63-17.49-34.17v0
+            c10.61,0.55,19.97-13.86,20.92-32.19h0C1143.81,307.89,1151.64,323.19,1162.25,323.73z"/>
+
+          <circle cx="" cy="" r="15" fill="#df039c">
+            <animateMotion
+              id="st"
+              dur="12s"
+              begin="0s;"
+              repeatCount="indefinite"
+              fill="freeze">
+              <mpath xlink:href="#routePath1"/>
+            </animateMotion>
+          </circle>
+
+          <circle cx="" cy="" r="8" fill="#f6d024">
+            <animateMotion
+              id="st"
+              dur="5s"
+              begin="0s;"
+              repeatCount="indefinite"
+              fill="freeze">
+              <mpath xlink:href="#routePath1"/>
+            </animateMotion>
+          </circle>
+
+          <circle cx="" cy="" r="20" fill="#addcf0">
+            <animateMotion
+              id="st"
+              dur="20s"
+              begin="0s;"
+              repeatCount="indefinite"
+              fill="freeze">
+              <mpath xlink:href="#routePath2"/>
+            </animateMotion>
+          </circle>
+
+          <circle cx="" cy="" r="10" fill="#00dbe9">
+            <animateMotion
+              id="st"
+              dur="10s"
+              begin="0s;"
+              repeatCount="indefinite"
+              fill="freeze">
+              <mpath xlink:href="#routePath2"/>
+            </animateMotion>
+          </circle>
+          </svg>
+
         </article>
       </section>
     </div>

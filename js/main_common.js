@@ -353,7 +353,7 @@ body.addEventListener('mousemove',(e)=>{
   let starImg2 = document.querySelector(".star_img2");
   let starImg3 = document.querySelector(".star_img3");
   let personImg1 = document.querySelector(".person_img1");
-  let orbitImg = document.querySelector(".orbit_img");
+  let orbitImg = document.querySelector(".orbit_svg");
 
   cloudImg1.style.left = + posX + 'px';
   cloudImg2.style.left = - posX + 'px';
@@ -367,8 +367,9 @@ body.addEventListener('mousemove',(e)=>{
 
   personImg1.style.left = -20 - posX + 'px';
 
-  orbitImg.style.left = 20 - posX*3 + 'px';
+  orbitImg.style.left = -20 - posX*3 + 'px';
   orbitImg.style.bottom = - posY*5 + 'px';
+  
 
 });
 

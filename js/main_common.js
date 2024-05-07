@@ -560,7 +560,7 @@ window.addEventListener('resize',(e)=>{
     illustWrap.style.width = (illustWrapWidth + illustWrapMargin)*illustCount - illustWrapMargin + 'px';
     
     function illustSlide(num){
-      illustWrap.style.transform = `translateX(${(-num*570)+320}px)`;
+      illustWrap.style.transform = `translateX(${(-num*580)+325}px)`;
       illustWrap.style.transition = 'transform 0.3s linear 0.1s';
       illustNum = num;
     }

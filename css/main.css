@@ -108,9 +108,9 @@
   .introduction > ul > li:nth-child(2) > ul > li{position: relative; font-size: 15px; font-weight: 400; line-height: normal; color: #000; margin: 20px 0; padding-left: 40px;}
   .introduction > ul > li:nth-child(2) > ul > li::after{content: ""; position: absolute; left: 0; top: 0; width: 23px; height: 20px; background: url(../images/contact_icon.png)no-repeat 0 0; background-size: cover;}
   
-  .introduction > ul > li:nth-child(2) > ul > li:nth-of-type(1):after{background-position-x: 0;}
-  .introduction > ul > li:nth-child(2) > ul > li:nth-of-type(2):after{background-position-x: -23px;}
-  .introduction > ul > li:nth-child(2) > ul > li:nth-of-type(3):after{background-position-x: -48px;}
+  .introduction > ul > li:nth-child(2) > ul > li:nth-of-type(1):after{background-position-x: -48px;}
+  .introduction > ul > li:nth-child(2) > ul > li:nth-of-type(2):after{background-position-x: 0;}
+  .introduction > ul > li:nth-child(2) > ul > li:nth-of-type(3):after{background-position-x: -23px;}
   .introduction > ul > li:nth-child(2) > ul > li:nth-of-type(4):after{background-position-x: -70px;}
   
   /* SKILLS */
@@ -320,9 +320,9 @@
   #content10 > section > div > ul > li > ul > li{position: relative; font-size: 20px; font-weight: 400; line-height: normal; color: #fff; margin: 30px 0; padding-left: 40px;}
   #content10 > section > div > ul > li > ul > li::after{content: ""; position: absolute; left: 0; top: 0; width: 28px; height: 25px; background: url(../images/contact_icon_white.png)no-repeat 0 0;}
   
-  #content10 > section > div > ul > li > ul > li:nth-of-type(1):after{background-position-x: 0;}
-  #content10 > section > div > ul > li > ul > li:nth-of-type(2):after{background-position-x: -28px;}
-  #content10 > section > div > ul > li > ul > li:nth-of-type(3):after{background-position-x: -58px;}
+  #content10 > section > div > ul > li > ul > li:nth-of-type(1):after{background-position-x: -58px;}
+  #content10 > section > div > ul > li > ul > li:nth-of-type(2):after{background-position-x: 0;}
+  #content10 > section > div > ul > li > ul > li:nth-of-type(3):after{background-position-x: -28px;}
   #content10 > section > div > ul > li > ul > li:nth-of-type(4):after{background-position-x: -88px;}
   
   #content10 > section > div > div{display: none;}
@@ -442,9 +442,9 @@
 .introduction > ul > li:nth-child(2) > ul > li{position: relative; font-size: 20px; font-weight: 400; line-height: normal; color: #000; margin: 30px 0; padding-left: 40px;}
 .introduction > ul > li:nth-child(2) > ul > li::after{content: ""; position: absolute; left: 0; top: 0; width: 28px; height: 25px; background: url(../images/contact_icon.png)no-repeat 0 0;}
 
-.introduction > ul > li:nth-child(2) > ul > li:nth-of-type(1):after{background-position-x: 0;}
-.introduction > ul > li:nth-child(2) > ul > li:nth-of-type(2):after{background-position-x: -28px;}
-.introduction > ul > li:nth-child(2) > ul > li:nth-of-type(3):after{background-position-x: -58px;}
+.introduction > ul > li:nth-child(2) > ul > li:nth-of-type(1):after{background-position-x: -58px;}
+.introduction > ul > li:nth-child(2) > ul > li:nth-of-type(2):after{background-position-x: 0;}
+.introduction > ul > li:nth-child(2) > ul > li:nth-of-type(3):after{background-position-x: -28px;}
 .introduction > ul > li:nth-child(2) > ul > li:nth-of-type(4):after{background-position-x: -88px;}
 
 /* SKILLS */
@@ -654,9 +654,9 @@ div.illust_arrow > a.btn_next.on{opacity: 0;}
 #content10 > section > div > ul > li > ul > li{position: relative; font-size: 20px; font-weight: 400; line-height: normal; color: #fff; margin: 30px 0; padding-left: 40px;}
 #content10 > section > div > ul > li > ul > li::after{content: ""; position: absolute; left: 0; top: 0; width: 28px; height: 25px; background: url(../images/contact_icon_white.png)no-repeat 0 0;}
 
-#content10 > section > div > ul > li > ul > li:nth-of-type(1):after{background-position-x: 0;}
-#content10 > section > div > ul > li > ul > li:nth-of-type(2):after{background-position-x: -28px;}
-#content10 > section > div > ul > li > ul > li:nth-of-type(3):after{background-position-x: -58px;}
+#content10 > section > div > ul > li > ul > li:nth-of-type(1):after{background-position-x: -58px;}
+#content10 > section > div > ul > li > ul > li:nth-of-type(2):after{background-position-x: 0;}
+#content10 > section > div > ul > li > ul > li:nth-of-type(3):after{background-position-x: -28px;}
 #content10 > section > div > ul > li > ul > li:nth-of-type(4):after{background-position-x: -88px;}
 
 

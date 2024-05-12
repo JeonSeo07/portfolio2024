@@ -32,7 +32,7 @@
 /* content 전체 글씨 */
 section h4{position: relative; font-size: 24px; font-weight: 700; text-transform: uppercase; color: #FE8536; margin-bottom: 33px; padding-left: 39px;}
 section h4::after{content: ""; position: absolute; left: 0; top: 0; width: 27.32px; height: 37.158px; background: url(../images/application_logo.png);}
-section p:first-of-type{font-size: 17px; font-weight: 400; line-height: 34px; color: #666; margin-left: 39px;}
+section p:first-of-type{font-size: 17px; font-weight: 400; line-height: 34px; color: #666; margin-left: 39px; word-break: keep-all;}
 
 
 /* content2 */
@@ -200,7 +200,7 @@ section p:first-of-type{font-size: 17px; font-weight: 400; line-height: 34px; co
 /* content 전체 글씨 */
 section h4{position: relative; font-size: 24px; font-weight: 700; text-transform: uppercase; color: #FE8536; margin-bottom: 33px; padding-left: 39px;}
 section h4::after{content: ""; position: absolute; left: 0; top: 0; width: 27.32px; height: 37.158px; background: url(../images/application_logo.png);}
-section p:first-of-type{font-size: 17px; font-weight: 400; line-height: 34px; color: #666; margin-left: 39px;}
+section p:first-of-type{font-size: 17px; font-weight: 400; line-height: 34px; color: #666; margin-left: 39px; word-break: keep-all;}
 
 
 /* content2 */

@@ -1,0 +1,194 @@
+/* sub1.css */
+
+/* Mobile 크기 0~768 */
+@media screen and (max-width:768px){
+
+
+/* content1 */
+.content1 > section{width: 100%; background-blend-mode: multiply; overflow: hidden; background: rgba(47, 8, 8, 0.70) url(../images/detail_bg.jpg)no-repeat 50% 0;  background-size: cover; margin: 0 auto;}
+.content1 > section > div{position: relative; width: 87%; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 250px 0 0 7%;}
+
+.content1 > section > div > h3{font-size: 16px; font-weight: 700; line-height: 20px; text-decoration-line: underline; margin-bottom: 31px;}
+.content1 > section > div > h4{font-size: 70px; font-weight: 700;}
+.content1 > section > div > p{font-size: 18px; font-weight: 400; line-height: 26px; margin-top: 40px;}
+
+.content1 > section > div > ul{position: absolute; left: 0; bottom: 125px; width: 100%; display: flex; justify-content: space-between; box-sizing: border-box;  padding: 0 40% 0 0;}
+.content1 > section > div > ul > li{flex: 1; margin-right: 22px; text-align: center; font-size: 18px; padding-bottom: 39px; border-bottom: 1px solid #fff; transform: translateY(0); opacity: 0.7; transition: transform 0.3s linear 0s, opacity 0.3s linear 0s;}
+.content1 > section > div > ul > li:last-child{margin-right: 0;}
+.content1 > section > div > ul > li:hover{transform: translateY(-10px); opacity: 1;}
+
+/* content 전체 글씨 */
+section h4{font-size: 24px; font-weight: 700; line-height: 30px; text-transform: uppercase;}
+section p:first-of-type{font-size: 15px; font-weight: 400; line-height: 25px;}
+
+/* content2 */
+.content2 > section{position: relative; background: #333; color: #fff; z-index: 1;}
+.content2 > section::after{content: ""; position: absolute; right: -50%; top: 0; width: 700px; height: 2000px; background: url(../images/detail_con2_01.jpg)no-repeat 0 50%; background-size: cover;  z-index: -2;}
+
+.content2 > section > div{position: relative; width: 87%; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 120px 145px 0 0;}
+.content2 > section > div::after{content: ""; position: absolute; left: 45%; bottom: 22%; transform: translateX(-50%); width: 500px; height: 208px; background: url(../images/detail_con2_03.jpg)no-repeat 0 0; background-size: contain; z-index: -1;}
+.content2 > section > div::before{content: ""; position: absolute; left: 45%; top: 18%; transform: translateX(-50%); width: 350px; height: 350px; background: url(../images/detail_con2_02.jpg)no-repeat 0 0; background-size: contain;z-index: -1;}
+
+.content2 > section > div > h4{margin-bottom: 60px;}
+.content2 > section > div > p{display: none;}
+
+.content2 > section > div > div{position: absolute; left: 0; bottom: 130px; width: 269px; height: 60px; border-radius: 50px; border: 1px solid #000; background: #FFF;}
+.content2 > section > div > div > a{display: block; width: 100%; height: 100%; font-size: 18px; font-weight: 700; text-align: center; color: #000; line-height: 60px;}
+
+
+
+/* content3 */
+.content3 > section{position: relative; background: #333; color: #fff; z-index: 1;}
+.content3 > section::after{content: ""; position: absolute; right: -50%; top: 0; width: 700px; height: 2000px; background: url(../images/detail_con3_01.jpg)no-repeat 0 0; background-size: cover;  z-index: -2;}
+
+.content3 > section > div{position: relative; width: 87%; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 120px 145px 0 0;}
+.content3 > section > div::after{content: ""; position: absolute; left: 45%; bottom: 22%; transform: translateX(-50%); width: 500px; height: 208px; background: url(../images/detail_con3_03.jpg)no-repeat 0 0; background-size: contain; z-index: -1;}
+.content3 > section > div::before{content: ""; position: absolute; left: 45%; top: 18%; transform: translateX(-50%); width: 350px; height: 350px; background: url(../images/detail_con3_02.jpg)no-repeat 0 0; background-size: contain;z-index: -1;}
+
+.content3 > section > div > h4{margin-bottom: 60px;}
+.content3 > section > div > p{display: none;}
+
+.content3 > section > div > div{position: absolute; left: 0; bottom: 130px; width: 269px; height: 60px; border-radius: 50px; border: 1px solid #000; background: #FFF;}
+.content3 > section > div > div > a{display: block; width: 100%; height: 100%; font-size: 18px; font-weight: 700; text-align: center; color: #000; line-height: 60px;}
+
+
+/* content4 */
+.content4 > section{position: relative; background: #333; color: #fff; z-index: 1;}
+.content4 > section::after{content: ""; position: absolute; right: -50%; top: 0; width: 700px; height: 2000px; background: url(../images/detail_con4_01.jpg)no-repeat 0 0; background-size: cover;  z-index: -2;}
+
+.content4 > section > div{position: relative; width: 87%; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 120px 145px 0 0;}
+.content4 > section > div::after{content: ""; position: absolute; left: 45%; bottom: 22%; transform: translateX(-50%); width: 500px; height: 208px; background: url(../images/detail_con4_03.jpg)no-repeat 0 0; background-size: contain; z-index: -1;}
+.content4 > section > div::before{content: ""; position: absolute; left: 45%; top: 18%; transform: translateX(-50%); width: 350px; height: 350px; background: url(../images/detail_con4_02.jpg)no-repeat 0 0; background-size: contain;z-index: -1;}
+
+.content4 > section > div > h4{margin-bottom: 60px;}
+.content4 > section > div > p{display: none;}
+
+.content4 > section > div > div{position: absolute; left: 0; bottom: 130px; width: 269px; height: 60px; border-radius: 50px; border: 1px solid #000; background: #FFF;}
+.content4 > section > div > div > a{display: block; width: 100%; height: 100%; font-size: 18px; font-weight: 700; text-align: center; color: #000; line-height: 60px;}
+
+
+
+/* content5 */
+.content5 > section{position: relative; background: #333; color: #fff; z-index: 1;}
+.content5 > section::after{content: ""; position: absolute; right: -50%; top: 0; width: 700px; height: 2000px; background: url(../images/detail_con5_01.jpg)no-repeat 0 50%; background-size: cover;  z-index: -2;}
+
+.content5 > section > div{position: relative; width: 87%; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 120px 145px 0 0;}
+.content5 > section > div::after{content: ""; position: absolute; left: 45%; bottom: 0; transform: translateX(-50%); width: 250px; height: 100%; background: url(../images/detail_con5_02.jpg)no-repeat 0 100%; background-size: cover; z-index: -1;}
+
+.content5 > section > div > h4{margin-bottom: 60px;}
+.content5 > section > div > p{display: none;}
+
+.content5 > section > div > div{position: absolute; left: 0; bottom: 130px; width: 269px; height: 60px; border-radius: 50px; border: 1px solid #000; background: #FFF;}
+.content5 > section > div > div > a{display: block; width: 100%; height: 100%; font-size: 18px; font-weight: 700; text-align: center; color: #000; line-height: 60px;}
+
+
+/* content6 */
+
+.content6 > section{position: relative; background: #333; color: #fff; z-index: 1;}
+.content6 > section::after{content: ""; position: absolute; right: 250px; top: 50%; transform: translateY(-50%); width: 200px; height: 600px; background: url(../images/popup_04.jpg)no-repeat 0 0; background-size: contain;  z-index: -2;}
+.content6 > section::before{content: ""; position: absolute; right: 50px; top: 50%; transform: translateY(-50%); width: 200px; height: 600px; background: url(../images/popup_05.jpg)no-repeat 0 0; background-size: contain;  z-index: -2;}
+
+.content6 > section > div{position: relative; width: 87%; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 120px 145px 0 0;}
+.content6 > section > div::after{content: ""; position: absolute; left: 100px; top: 50%; transform: translateX(-50%)translateY(-50%); width: 200px; height: 540px; background: url(../images/popup_01.jpg)no-repeat 0 100%; background-size: cover; }
+.content6 > section > div::before{content: ""; display: none;}
+
+
+
+}
+
+/* Pc 크기 769~최대 */
+@media screen and (min-width:769px){
+
+
+/* content1 */
+.content1 > section{width: 100%; background-blend-mode: multiply; overflow: hidden; background: rgba(47, 8, 8, 0.70) url(../images/detail_bg.jpg)no-repeat 50% 0;  background-size: cover; margin: 0 auto;}
+.content1 > section > div{width: 1720px; margin: 0 auto; box-sizing: border-box;  padding: 250px 292px 0 146px;}
+
+.content1 > section > div > h3{font-size: 16px; font-weight: 700; line-height: 20px; text-decoration-line: underline; margin-bottom: 31px;}
+.content1 > section > div > h4{font-size: 60px; font-weight: 700;}
+.content1 > section > div > p{font-size: 18px; font-weight: 400; line-height: 26px; margin-top: 40px;}
+
+.content1 > section > div > ul{position: absolute; left: 0; bottom: 125px; width: 100%; display: flex; justify-content: space-between; box-sizing: border-box;  padding: 0 390px 0 245px;}
+.content1 > section > div > ul > li{flex: 1; margin-right: 22px; text-align: center; font-size: 18px; padding-bottom: 39px; border-bottom: 1px solid #fff; transform: translateY(0); opacity: 0.7; transition: transform 0.3s linear 0s, opacity 0.3s linear 0s;}
+.content1 > section > div > ul > li:last-child{margin-right: 0;}
+.content1 > section > div > ul > li:hover{transform: translateY(-10px); opacity: 1;}
+
+/* content 전체 글씨 */
+section h4{font-size: 24px; font-weight: 700; line-height: 30px; text-transform: uppercase;}
+section p:first-of-type{font-size: 15px; font-weight: 400; line-height: 25px; word-break: keep-all;}
+
+
+/* content2 */
+.content2 > section{position: relative; background: #333; color: #fff; z-index: 1;}
+.content2 > section::after{content: ""; position: absolute; right: 100px; top: 0; width: 700px; height: 2000px; background: url(../images/detail_con2_01.jpg)no-repeat 0 50%; background-size: cover;  z-index: -2;}
+
+.content2 > section > div{position: relative; width: 1720px; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 120px 145px 0 0;}
+.content2 > section > div::after{content: ""; position: absolute; left: 45%; bottom: 10%; transform: translateX(-50%); width: 700px; height: 300px; background: url(../images/detail_con2_03.jpg)no-repeat 0 0; background-size: contain; }
+.content2 > section > div::before{content: ""; position: absolute; left: 45%; top: 13%; transform: translateX(-50%); width: 400px; height: 400px; background: url(../images/detail_con2_02.jpg)no-repeat 0 0; background-size: contain;}
+
+.content2 > section > div > h4{margin-bottom: 60px;}
+.content2 > section > div > p{width: 300px;}
+.content2 > section > div > p:last-of-type{padding-top: 30px; line-height: 1.7;}
+
+.content2 > section > div > div{position: absolute; left: 0; bottom: 186px; width: 269px; height: 60px; border-radius: 50px; border: 1px solid #000; background: #FFF;}
+.content2 > section > div > div > a{display: block; width: 100%; height: 100%; font-size: 18px; font-weight: 700; text-align: center; color: #000; line-height: 60px;}
+
+
+/* content3 */
+.content3 > section{position: relative; background: #333; color: #fff; z-index: 1;}
+.content3 > section::after{content: ""; position: absolute; right: 100px; top: 0; width: 700px; height: 2000px; background: url(../images/detail_con3_01.jpg)no-repeat 0 0; background-size: cover;  z-index: -2;}
+
+.content3 > section > div{position: relative; width: 1720px; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 120px 145px 0 0;}
+.content3 > section > div::after{content: ""; position: absolute; left: 45%; bottom: 10%; transform: translateX(-50%); width: 700px; height: 300px; background: url(../images/detail_con3_03.jpg)no-repeat 0 0; background-size: contain; }
+.content3 > section > div::before{content: ""; position: absolute; left: 45%; top: 13%; transform: translateX(-50%); width: 400px; height: 400px; background: url(../images/detail_con3_02.jpg)no-repeat 0 0; background-size: contain;}
+
+.content3 > section > div > h4{margin-bottom: 60px;}
+.content3 > section > div > p{width: 300px;}
+.content3 > section > div > p:last-of-type{padding-top: 30px; line-height: 1.7;}
+
+.content3 > section > div > div{position: absolute; left: 0; bottom: 186px; width: 269px; height: 60px; border-radius: 50px; border: 1px solid #000; background: #FFF;}
+.content3 > section > div > div > a{display: block; width: 100%; height: 100%; font-size: 18px; font-weight: 700; text-align: center; color: #000; line-height: 60px;}
+
+
+/* content4 */
+.content4 > section{position: relative; background: #333; color: #fff; z-index: 1;}
+.content4 > section::after{content: ""; position: absolute; right: 100px; top: 0; width: 700px; height: 2000px; background: url(../images/detail_con4_01.jpg)no-repeat 0 177%; background-size: cover;  z-index: -2;}
+
+.content4 > section > div{position: relative; width: 1720px; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 120px 145px 0 0;}
+.content4 > section > div::after{content: ""; position: absolute; left: 45%; bottom: 10%; transform: translateX(-50%); width: 700px; height: 300px; background: url(../images/detail_con4_03.jpg)no-repeat 0 0; background-size: contain; }
+.content4 > section > div::before{content: ""; position: absolute; left: 45%; top: 13%; transform: translateX(-50%); width: 400px; height: 400px; background: url(../images/detail_con4_02.jpg)no-repeat 0 0; background-size: contain;}
+
+.content4 > section > div > h4{margin-bottom: 60px;}
+.content4 > section > div > p{width: 300px;}
+.content4 > section > div > p:last-of-type{padding-top: 30px; line-height: 1.7;}
+
+.content4 > section > div > div{position: absolute; left: 0; bottom: 186px; width: 269px; height: 60px; border-radius: 50px; border: 1px solid #000; background: #FFF;}
+.content4 > section > div > div > a{display: block; width: 100%; height: 100%; font-size: 18px; font-weight: 700; text-align: center; color: #000; line-height: 60px;}
+
+
+/* content5 */
+.content5 > section{position: relative; background: #333; color: #fff; z-index: 1;}
+.content5 > section::after{content: ""; position: absolute; right: 100px; top: 0; width: 700px; height: 2000px; background: url(../images/detail_con5_01.jpg)no-repeat 0 0; background-size: cover;  z-index: -2;}
+
+.content5 > section > div{position: relative; width: 1720px; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 120px 145px 0 0;}
+.content5 > section > div::after{content: ""; position: absolute; left: 45%; bottom: 0; transform: translateX(-50%); width: 400px; height: 100%; background: url(../images/detail_con5_02.jpg)no-repeat 0 100%; background-size: cover; }
+
+.content5 > section > div > h4{margin-bottom: 60px;}
+.content5 > section > div > p{width: 300px;}
+.content5 > section > div > p:last-of-type{padding-top: 30px; line-height: 1.7;}
+
+.content5 > section > div > div{position: absolute; left: 0; bottom: 186px; width: 269px; height: 60px; border-radius: 50px; border: 1px solid #000; background: #FFF;}
+.content5 > section > div > div > a{display: block; width: 100%; height: 100%; font-size: 18px; font-weight: 700; text-align: center; color: #000; line-height: 60px;}
+
+/* content6 */
+.content6 > section{position: relative; background: #333; color: #fff; z-index: 1;}
+.content6 > section::after{content: ""; position: absolute; right: 520px; top: 0; width: 400px; height: 2000px; background: url(../images/popup_04.jpg)no-repeat 0 0; background-size: contain;  z-index: -2;}
+.content6 > section::before{content: ""; position: absolute; right: 100px; top: 0; width: 400px; height: 2000px; background: url(../images/popup_05.jpg)no-repeat 0 0; background-size: contain;  z-index: -2;}
+
+.content6 > section > div{position: relative; width: 1720px; height: 100%; margin: 0 auto; box-sizing: border-box;  padding: 120px 145px 0 0;}
+.content6 > section > div::after{content: ""; position: absolute; left: 41%; top: 50%; transform: translateX(-50%)translateY(-50%); width: 333px; height: 900px; background: url(../images/popup_01.jpg)no-repeat 0 100%; background-size: cover; }
+.content6 > section > div::before{content: ""; position: absolute; left: 20.5%; top: 50%; transform: translateX(-50%) translateY(-50%); width: 333px; height: 555px; background: url(../images/popup_02.jpg)no-repeat 0 0; background-size: contain;}
+
+
+}
+

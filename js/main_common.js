@@ -294,9 +294,9 @@ for(var i=0; i<headerBtn.length; i++){
       break;
 
       case "content6Btn":
-        contentClass(5*devHeight,5);
-        lisAni(lis, 5);
-        lisLastNum(5);
+        contentClass(3*devHeight,3);
+        lisAni(lis, 3);
+        lisLastNum(3);
       break;
 
       case "content7Btn":
@@ -420,13 +420,44 @@ body.addEventListener('mousemove',(e)=>{
 
 
 
+// 타이틀 디자인 보기
+const mobBg = document.querySelector("div.bg");
+
+const titleBtn = document.querySelector('a.titleBtn');
+const titleDesign = document.querySelector('div.title_design');
+
+const resetBtn3 = document.querySelector('a.resetBtn3');
+
+titleBtn.addEventListener('click',(e)=>{
+  e.preventDefault();
+  body.classList.add("on");
+  mobBg.classList.add("on");
+  titleDesign.classList.add("on");
+
+  titleDesign.addEventListener('wheel',(e)=>{
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+    });
+  });
+
+  resetBtn3.addEventListener('click',(e)=>{
+    e.preventDefault();
+    body.classList.remove("on");
+    mobBg.classList.remove("on");
+    titleDesign.classList.remove("on");
+
+    scrollAni(2*devHeight);
+    lisAni(lis, 2);
+  });
+
 
 // 웹 접근성 자세히 보기, 웹 표준 자세히 보기
-const mobBg = document.querySelector("div.bg");
 const accBtn = document.querySelector('a.accessibilityBtn');
 const accessibility = document.querySelector('div.web_accessibility');
 const stanBtn = document.querySelector('a.standardsBtn');
 const standards = document.querySelector('div.web_standards');
+
 const resetBtn = document.querySelectorAll('a.resetBtn');
 
 accBtn.addEventListener('click',(e)=>{
@@ -463,8 +494,8 @@ for(var i=0; i<resetBtn.length; i++){
     accessibility.classList.remove("on");
     standards.classList.remove("on");
 
-    scrollAni(2*devHeight);
-    lisAni(lis, 2);
+    scrollAni(3*devHeight);
+    lisAni(lis, 3);
   });
 }
 

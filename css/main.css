@@ -643,8 +643,8 @@ div.illust_all > ul > li > a > p:first-of-type{margin-bottom: 20px;}
 div.illust_all > ul > li > a > p:last-of-type{font-size: 15px; }
 
 /* img */
-div.illust_all > ul > li:nth-of-type(1){background:url(../images/illustration_01_01.jpg)no-repeat 50% 0;background-size: 600px;}
-div.illust_all > ul > li:nth-of-type(2){background:url(../images/illustration_02.jpg)no-repeat 50% 0; background-size: 900px;}
+div.illust_all > ul > li:nth-of-type(1){background:url(../images/illustration_01.jpg)no-repeat 50% 0;background-size: 600px;}
+div.illust_all > ul > li:nth-of-type(2){background:url(../images/illustration_02.png)no-repeat 50% 0; background-size: 900px;}
 div.illust_all > ul > li:nth-of-type(3){background:url(../images/illustration_03.jpg)no-repeat 10% 0; background-size: 570px;}
 div.illust_all > ul > li:nth-of-type(4){background:url(../images/illustration_04.jpg)no-repeat 50% 0; background-size: 900px;}
 div.illust_all > ul > li:nth-of-type(5){background:url(../images/illustration_05.jpg)no-repeat 0 0; background-size: 560px;}
